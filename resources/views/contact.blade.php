@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/public/css/stylecontact.css">
+    <link rel="stylesheet" type="text/css" href="/benoitrocher/public/css/style.css">
     <title>Document</title>
 </head>
 <body>
+
         <div class="container">
+          <!-- Header -->
                 <div class="headerr">
                   <header>
                       <h1 class="titre">
@@ -27,6 +29,7 @@
                       </nav>
                     </header>
               </div>
+              <!-- Formulaire-->
                 <div class="formulaire">
                     <div class="nom">
                     <p>Nom :</p><br />
@@ -52,7 +55,7 @@
 
               
 
-
+              <!-- Footer -->    
               <footer>
                     <div class="detail">
           
@@ -70,6 +73,7 @@
                   </footer>
           
                 </div>              
-    
+                <script src="/benoitrocher/resources/js/jquery-3.3.1.min.js"></script>
+                <script type="text/javascript" src="/benoitrocher/resources/js/sliderpoo.js"></script>
 </body>
 </html>

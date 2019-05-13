@@ -6,13 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Benoit Rocher - Mentions légales</title>
-    <link rel="stylesheet" type="text/css" href="/public/css/styleml.css">
+    <link rel="stylesheet" type="text/css" href="/benoitrocher/public/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
 
   <body>
    
       <div class="container">
+        <!-- Header -->
         <div class="headerr">
           <header>
               <h1 class="titre">
@@ -32,7 +33,7 @@
               </nav>
             </header>
       </div>
-        
+        <!-- Texte des mentions légales -->
         <div class="description">
 
           <p class="titre_desc">Mentions légales</p>
@@ -54,7 +55,7 @@
           </p></div>
         </div>
 
-
+        <!-- Footer -->
         <footer>
           <div class="detail">
 
@@ -73,8 +74,8 @@
 
       </div>
 
-      <script src="/resources/js/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="/resources/js/sliderpoo.js"></script>
+      <script src="/benoitrocher/resources/js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="/benoitrocher/resources/js/sliderpoo.js"></script>
 
   </body>
 </html>

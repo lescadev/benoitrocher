@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Benoit Rocher - Accueil</title>
-    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/benoitrocher/public/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
 
   <body>
-   
+      <!-- Header -->
       <div class="container">
         <div class="headerr">
           <header>
@@ -36,42 +36,42 @@
 
           <div id="slider" onmouseout="slider.launchInterval()" onmouseover="slider.pause()">
 
-            <div class="slide" style="background-image: url(/public/img/image.jpg)">
+            <div class="slide" style="background-image: url(/benoitrocher/public/img/image.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(/public/img/2.jpg)">
+            <div class="slide" style="background-image: url(/benoitrocher/public/img/2.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(/public/img/3.jpg)">
+            <div class="slide" style="background-image: url(/benoitrocher/public/img/3.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(/public/img/4.jpg)">
+            <div class="slide" style="background-image: url(/benoitrocher/public/img/4.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(/public/img/5.jpg)">
+            <div class="slide" style="background-image: url(/benoitrocher/public/img/5.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(/public/img/6.jpg)">
+            <div class="slide" style="background-image: url(/benoitrocher/public/img/6.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(/public/img/7.jpg)">
+            <div class="slide" style="background-image: url(/benoitrocher/public/img/7.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(/public/img/8.jpg)">
+            <div class="slide" style="background-image: url(/benoitrocher/public/img/8.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
@@ -80,7 +80,7 @@
               <a href="#" class="fleche fleche-droite" onclick="slider.slideSuivant()">&gt;</a>
 
         </div>
-        
+        <!-- Description -->
         <div class="description">
 
           <p class="titre_desc">Description</p>
@@ -100,7 +100,7 @@
         </div>
       
 
-
+        <!-- Footer -->
         <footer>
           <div class="detail">
 
@@ -119,8 +119,8 @@
 
       </div>
 
-      <script src="/resources/js/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="/resources/js/sliderpoo.js"></script>
+      <script src="/benoitrocher/resources/js/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="/benoitrocher/resources/js/sliderpoo.js"></script>
 
   </body>
 </html>
