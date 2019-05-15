@@ -35,6 +35,7 @@
       </div>
         <!-- Formulaire -->
         <div class="formulaire">
+          <div class="firstcolumn">
           <div class="nom">
             <label for="usr">Nom: </label>
           <input type="text" name="nom" value=""> <br> <br> <br>
@@ -51,12 +52,15 @@
             <label for="usr">Objet: </label>
           <input type="text" name="objet" value=""> <br> <br> <br>
           </div>
+          </div>
           <div class="message">
-            <label for="usr">Message: </label>
+            <label for="usr">Message:&nbsp;&nbsp;&nbsp;&nbsp;</label>
           <textarea type="text" name="message" value=""></textarea> <br> <br> <br>
           </div>
+        </div>
+        <div class="boutonenvoyer">
           <button type="button">Envoyer</button>
-      </div>
+        </div>
 
 
          <!-- Footer -->

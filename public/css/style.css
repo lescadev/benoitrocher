@@ -251,10 +251,34 @@ p{
 }
 
 .formulaire {
-    height: 90vh;
-    grid-column: 5 / 11;
+    height: 75vh;
+    grid-column: 4 / 13;
+    display:flex;
+}
+
+.firstcolumn {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 40vw;
+    height: 40vh;
+}
+
+.message {
+    margin-left: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boutonenvoyer {
+    grid-column: 5 / 10;
+    margin-bottom: 5vh;
+    height: 10vh;
+    display: flex;
     justify-content: center;
 }
