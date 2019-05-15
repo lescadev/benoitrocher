@@ -29,5 +29,5 @@ Route::get('/mentions.blade.php', function () {
 });
 
 Route::get('/Accueil.blade.php', function () {
-    return view('accueil');
+    return view('Accueil');
 });
