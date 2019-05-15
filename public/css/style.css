@@ -110,7 +110,8 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    height: 10vh;
 }
 
 .mention a{
@@ -225,10 +226,10 @@ p{
 /* description */
 
 .description {
-    margin-top: 70px;
+    margin-top: 9vh;
     margin-left: 5vw;
     grid-column: 3 / 13;
-    height: 100vh;
+    height: 81vh;
     text-align: left;
 }
 
@@ -247,4 +248,13 @@ p{
 .para2 p {
     font-size: 15px;
     text-align: left;
+}
+
+.formulaire {
+    height: 90vh;
+    grid-column: 5 / 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
