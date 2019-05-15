@@ -14,3 +14,20 @@
 Route::get('/', function () {
     return view('Accueil');
 });
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+Route::get('/contact.blade.php', function () {
+    return view('contact');
+});
+
+Route::get('/mentions.blade.php', function () {
+    return view('mentions');
+});
+
+Route::get('/Accueil.blade.php', function () {
+    return view('accueil');
+});

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Benoit Rocher - Mentions légales</title>
-    <link rel="stylesheet" type="text/css" href="benoitrocher/public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css')}}">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   </head>
 
@@ -74,8 +74,8 @@
 
       </div>
 
-      <script src="benoitrocher/resources/js/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="benoitrocher/resources/js/sliderpoo.js"></script>
+      <script src="{{ URL::asset('js/jquery-3.3.1.min.js')}}"></script>
+      <script type="text/javascript" src="{{ URL::asset('js/sliderpoo.js')}}"></script>
 
   </body>
 </html>

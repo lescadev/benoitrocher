@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="benoitrocher/public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css')}}">
     <title>Document</title>
 </head>
 <body>
@@ -73,7 +73,7 @@
                   </footer>
           
                 </div>              
-                <script src="benoitrocher/resources/js/jquery-3.3.1.min.js"></script>
-                <script type="text/javascript" src="benoitrocher/resources/js/sliderpoo.js"></script>
+                <script src="{{ URL::asset('js/jquery-3.3.1.min.js')}}"></script>
+                <script type="text/javascript" src="{{ URL::asset('js/sliderpoo.js')}}"></script>
 </body>
 </html>
