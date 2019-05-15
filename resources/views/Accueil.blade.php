@@ -36,42 +36,42 @@
 
           <div id="slider" onmouseout="slider.launchInterval()" onmouseover="slider.pause()">
 
-            <div class="slide" style="background-image: url(benoitrocher/public/img/image.jpg)">
+            <div class="slide" style="background-image: url(/img/image.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(benoitrocher/public/img/2.jpg)">
+            <div class="slide" style="background-image: url(/img/2.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(benoitrocher/public/img/3.jpg)">
+            <div class="slide" style="background-image: url(/img/3.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(benoitrocher/public/img/4.jpg)">
+            <div class="slide" style="background-image: url(/img/4.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(benoitrocher/public/img/5.jpg)">
+            <div class="slide" style="background-image: ur/img/5.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(benoitrocher/public/img/6.jpg)">
+            <div class="slide" style="background-image: url(/img/6.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(benoitrocher/public/img/7.jpg)">
+            <div class="slide" style="background-image: url(/img/7.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
 
-            <div class="slide" style="background-image: url(benoitrocher/public/img/8.jpg)">
+            <div class="slide" style="background-image: url(/img/8.jpg)">
               <h2 class="slider-title">BENOIT ROCHER</h2>
               <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
             </div>
@@ -123,4 +123,4 @@
       <script type="text/javascript" src="/js/sliderpoo.js"></script>
 
   </body>
-</html>
+</html
