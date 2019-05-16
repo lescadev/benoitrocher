@@ -110,7 +110,8 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    height: 10vh;
 }
 
 .mention a{
@@ -225,10 +226,10 @@ p{
 /* description */
 
 .description {
-    margin-top: 70px;
+    margin-top: 9vh;
     margin-left: 5vw;
     grid-column: 3 / 13;
-    height: 100vh;
+    height: 81vh;
     text-align: left;
 }
 
@@ -247,4 +248,46 @@ p{
 .para2 p {
     font-size: 15px;
     text-align: left;
+}
+    /*Formulaire*/
+.formulaire {
+    height: 75vh;
+    grid-column: 4 / 13;
+    display:flex;
+    justify-content: center;
+}
+
+.firstcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 40vw;
+    height: 40vh;
+}
+
+.message {
+    margin-left: 10vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.msg {
+    display:flex;
+    align-items: flex-start;
+    width: 40vw;
+
+}
+
+.boutonenvoyer {
+    grid-column: 5 / 10;
+    margin-bottom: 5vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;  
 }
