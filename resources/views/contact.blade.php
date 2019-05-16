@@ -4,8 +4,9 @@
 
 <!-- Formulaire-->
 <div class="formulaire">
+  <div class="firstcolumn">
   <div class="nom">
-  <p>Nom :</p><br />
+  <p>Nom :</p>
   <input type="text" name="nom" value="" />
   </div>
   <div class="prenom">
@@ -20,9 +21,10 @@
   <p>Objet :</p>
   <input type="text" name="objet" value="" />
   </div>
+</div>
   <div class="message">
-  <p>Message :</p>
-  <input type="text" name="message" value="" />
+  <p class="msg">Message :</p>
+  <input class="textarea" type="text" name="message" value="" />
   </div>    
 </div>
 

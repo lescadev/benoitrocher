@@ -6,7 +6,7 @@
 
 <div id="slider" onmouseout="slider.launchInterval()" onmouseover="slider.pause()">
 
-  <div class="slide" style="background-image: url(/img/image.jpg)">
+  <div class="slide" style="background-image: url(/img/1.jpg)">
     <h2 class="slider-title">BENOIT ROCHER</h2>
     <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
   </div>
@@ -26,7 +26,7 @@
     <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
   </div>
 
-  <div class="slide" style="background-image: ur/img/5.jpg)">
+  <div class="slide" style="background-image: url(/img/5.jpg)">
     <h2 class="slider-title">BENOIT ROCHER</h2>
     <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
   </div>

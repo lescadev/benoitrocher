@@ -41,7 +41,7 @@
           <div class="detail">
 
             <div class="mention">
-              <a href="mentions.blade.php" target="_blank">Mentions légales</a>
+              <a href="mentions.blade.php">Mentions légales</a>
             </div>
 
             <div class="info">

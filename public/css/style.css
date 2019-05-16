@@ -251,7 +251,7 @@ p{
 }
     /*Formulaire*/
 .formulaire {
-    height: 75vh;
+    height: 90vh;
     grid-column: 4 / 13;
     display:flex;
     justify-content: center;
@@ -264,7 +264,7 @@ p{
     justify-content: center;
 }
 
-textarea {
+.textarea {
     width: 40vw;
     height: 40vh;
 }
