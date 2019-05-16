@@ -4,28 +4,33 @@
 
 <!-- Formulaire-->
 <div class="formulaire">
-  <div class="firstcolumn">
-  <div class="nom">
-  <p>Nom :</p>
-  <input type="text" name="nom" value="" />
+    <div class="firstcolumn">
+      <div class="nom">
+        <label for="name">Nom :</label>
+        <input id ="name" type="text" name="nom" value="" />
+      </div>
+      <br/>
+      <div class="prenom">
+        <label for="prenom">Prenom :</label>
+        <input id="prenom" type="text" name="prenom" value="" />
+      </div>
+      <br/>
+      <div class="email">
+        <label for="email">Email :</label>
+        <input id="email" type="text" name="email" value="" />
+      </div>
+      <br/>
+      <div class="objet">
+        <label for="objet">Objet :</label>
+        <input id="objet" type="text" name="objet" value="" />
+      </div>
+      <br/>
+    </div>
+      <div class="message">
+        <label for="message">Message :</label>
+        <textarea id="message" type="text" name="message"></textarea>
+      </div>
   </div>
-  <div class="prenom">
-  <p>Prénom :</p>
-  <input type="text" name="prenom" value="" />
-  </div>
-  <div class="email">
-  <p>E-mail :</p>
-  <input type="text" name="email" value="" />
-  </div>
-  <div class="objet">
-  <p>Objet :</p>
-  <input type="text" name="objet" value="" />
-  </div>
-</div>
-  <div class="message">
-  <p class="msg">Message :</p>
-  <input class="textarea" type="text" name="message" value="" />
-  </div>    
-</div>
+  <button type="button" class="boutonenvoyer">Envoyer</button>
 
 @endsection
