@@ -249,11 +249,12 @@ p{
     font-size: 15px;
     text-align: left;
 }
-
+    /*Formulaire*/
 .formulaire {
     height: 75vh;
     grid-column: 4 / 13;
     display:flex;
+    justify-content: center;
 }
 
 .firstcolumn {
@@ -271,8 +272,16 @@ textarea {
 .message {
     margin-left: 10vh;
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.msg {
+    display:flex;
+    align-items: flex-start;
+    width: 40vw;
+
 }
 
 .boutonenvoyer {
@@ -280,5 +289,5 @@ textarea {
     margin-bottom: 5vh;
     height: 10vh;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }

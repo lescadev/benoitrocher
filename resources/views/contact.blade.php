@@ -37,25 +37,25 @@
         <div class="formulaire">
           <div class="firstcolumn">
           <div class="nom">
-            <label for="usr">Nom: </label>
+            <label for="usr">Nom: </label><br>
           <input type="text" name="nom" value=""> <br> <br> <br>
           </div>
           <div class="prenom">
-            <label for="usr">Prénom: </label>
+            <label for="usr">Prénom: </label><br>
           <input type="text" name="prenom" value=""> <br> <br> <br>
           </div>
           <div class="email">
-            <label for="usr">E-mail: </label>
+            <label for="usr">E-mail: </label><br>
           <input type="text" name="email" value=""> <br> <br> <br>
           </div>
           <div class="objet">
-            <label for="usr">Objet: </label>
+            <label for="usr">Objet: </label><br>
           <input type="text" name="objet" value=""> <br> <br> <br>
           </div>
           </div>
           <div class="message">
-            <label for="usr">Message:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <textarea type="text" name="message" value=""></textarea> <br> <br> <br>
+            <label class="msg" id="usr" for="usr">Message:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <textarea id="usr" type="text" name="message" value=""></textarea>
           </div>
         </div>
         <div class="boutonenvoyer">
@@ -68,7 +68,7 @@
           <div class="detail">
 
             <div class="mention">
-              <a href="mentions.blade.php" target="_blank">Mentions légales</a>
+              <a href="mentions.blade.php">Mentions légales</a>
             </div>
 
             <div class="info">
