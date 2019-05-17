@@ -66,7 +66,6 @@
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab placeat vel eos odit! 
   Inventore perspiciatis aut quisquam deleniti fugit porro, quibusdam in et blanditiis 
   est aspernatur asperiores doloribus tenetur accusamus? <br> <br> <br>
-  Par ailleurs, voici un lien vers ma page <a href="https://www.facebook.com/benroc.photographe" target="_blank">facebook.</a></p>
 </p></div>
 </div>
 

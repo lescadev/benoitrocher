@@ -40,7 +40,8 @@
         <footer>
           <div class="detail">
               <a href="mentions.blade.php">Mentions légales</a>
-              <p>- Tous droits Réservé - 2019</p>
+              <p>- Tous droits Réservé - 2019 -</p>
+              <a href="https://www.facebook.com/benroc.photographe" target="_blank">facebook.</a>
           </div>
 
         </footer>
