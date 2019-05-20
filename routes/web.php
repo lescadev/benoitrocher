@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('Accueil');
 });
 
@@ -30,5 +30,10 @@ Route::get('/mentions.blade.php', function () {
 
 Route::get('/Accueil.blade.php', function () {
     return view('Accueil');
-});
+}); */
 
+Route::get('/', 'PagesController@accueil')->name('accueil');
+
+Route::get('/mentions-légales', 'PagesController@mentions')->name('mentions');
+
+Route::get('/contactez-nous', 'PagesController@contact')->name('contact');
