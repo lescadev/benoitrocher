@@ -18,18 +18,18 @@
           <header>
               <h1 class="titre">
                 <div class="logo">
-                <a href="Accueil.blade.php">Ben Roc</a>
+                <a href="{{ route('accueil') }}">Ben Roc</a>
               </div>
               </h1>
         
               <nav>
-                <a href="Accueil.blade.php">Accueil</a>
+                <a href="{{ route('accueil') }}">Accueil</a>
                 <br>
                 <a href="photo.html">Photos</a>
                 <br>
                 <a href="prestations.html">Prestations</a>
                 <br>
-                <a href="contact.blade.php">Contact</a>
+                <a href="{{ route('contact') }}">Contact</a>
               </nav>
             </header>
       </div>
@@ -39,7 +39,7 @@
         <!-- Footer -->
         <footer>
           <div class="detail">
-              <a href="mentions.blade.php">Mentions légales</a>
+              <a href="{{ route('mentions') }}">Mentions légales</a>
               <p>- Tous droits Réservé - 2019 -</p>
               <a href="https://www.facebook.com/benroc.photographe" target="_blank">facebook.</a>
           </div>

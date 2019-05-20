@@ -56,7 +56,7 @@
 <p class="titre_desc">Description</p>
 
 <div class="para1"><p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  Lorem ipsum dolor sit amet, consectetur adipisicing  ytaque elit. 
   Qui, placeat fuga? Quam fugiat incidunt possimus error neque! 
   Unde molestiae id at libero ipsum voluptatibus eum, aliquam suscipit! 
   Consequuntur, cupiditate at?
