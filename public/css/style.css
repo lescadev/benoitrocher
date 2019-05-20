@@ -86,7 +86,6 @@ footer{
 	justify-content: center;
 
 	grid-column: 3 / span 9;
-	grid-row: 11 / span 2;
 }
 
 p{
@@ -108,32 +107,22 @@ p{
 
 .detail{
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 10vh;
 }
 
-.mention a{
+.detail a{
 	padding: 0.3em;
     color: black;
     text-decoration: none;
-    font-size:0.9em;
+    font-size:0.8em;
 
 }
 
-.mention a:hover{
+.detail a:hover{
     color: red;
     transition: color 0.5s ease;
-}
-
-.mention{
-    margin-bottom: 0.2em;
-}
-
-.info {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /* Slider */
@@ -249,45 +238,76 @@ p{
     font-size: 15px;
     text-align: left;
 }
-    /*Formulaire*/
+/*Formulaire*/
 .formulaire {
     height: 75vh;
     grid-column: 4 / 13;
     display:flex;
     justify-content: center;
 }
-
+    
 .firstcolumn {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+    
 textarea {
     width: 40vw;
     height: 40vh;
 }
-
+    
 .message {
     margin-left: 10vh;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
-
+    
+.nom{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+    
+.prenom{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+    
+.objet{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+    
+.email{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+    
 .msg {
     display:flex;
     align-items: flex-start;
     width: 40vw;
-
+    
 }
 
 .boutonenvoyer {
-    grid-column: 5 / 10;
+    grid-column: 7 / 8;
     margin-bottom: 5vh;
     height: 10vh;
+    width: 10vw;
     display: flex;
     justify-content: center;  
 }

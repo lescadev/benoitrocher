@@ -39,16 +39,9 @@
         <!-- Footer -->
         <footer>
           <div class="detail">
-
-            <div class="mention">
-              <a href="mentions.blade.php" target="_blank">Mentions légales</a>
-            </div>
-
-            <div class="info">
-              <p>06.99.59.75.02 - benoit.roc@gmail.com - <a href="https://www.facebook.com/benroc.photographe" target="_blank">facebook</a></p>
-              <p>Tous droits Réservé - 2019</p>
-            </div>
-
+              <a href="mentions.blade.php">Mentions légales</a>
+              <p>- Tous droits Réservé - 2019 -</p>
+              <a href="https://www.facebook.com/benroc.photographe" target="_blank">facebook.</a>
           </div>
 
         </footer>
