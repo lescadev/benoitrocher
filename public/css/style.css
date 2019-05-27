@@ -82,10 +82,9 @@ nav a:hover {
 /*pied de page*/
 
 footer{
-	display: fix;
+	display: flex;
 	justify-content: center;
-
-	grid-column: 3 / span 9;
+	grid-column: 3 / 13;
 }
 
 p{
@@ -310,4 +309,12 @@ textarea {
     width: 10vw;
     display: flex;
     justify-content: center;  
+}
+
+/*gallerie*/
+
+.galerie-content{
+    grid-column: 3 / 13;
+    height: 90vh;
+
 }

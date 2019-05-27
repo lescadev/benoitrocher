@@ -2,7 +2,6 @@ class Slide {
     constructor(sIndex, theInterval){
       this.theInterval = theInterval;
       this.slides = $(".slide");
-      this.slidesLiens=$(".en-savoir-plus");
       this.sIndex = sIndex;
     }
       slideSuivant() {
@@ -30,7 +29,6 @@ class Slide {
       this.theInterval = setInterval(() =>{
         this.slideSuivant()
       } ,4000);
-      console.log(this.theInterval);
       return this.theInterval;
     }
   }
