@@ -12,7 +12,6 @@ class PagesController extends Controller
     public function accueil()
     {
         $photos = Photo::select('image')->where('ajout_diapo', 1)->get()->toArray();
-//var_dump($photos);exit;
 
         return view('accueil',[
             'photos' => $photos
