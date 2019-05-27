@@ -25,7 +25,7 @@
               <nav>
                 <a href="{{ route('accueil') }}">Accueil</a>
                 <br>
-                <a href="photo.html">Photos</a>
+                <a href="{{ route('galerie') }}">Galerie</a>
                 <br>
                 <a href="prestations.html">Prestations</a>
                 <br>

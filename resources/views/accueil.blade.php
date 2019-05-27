@@ -6,45 +6,12 @@
 
 <div id="slider" onmouseout="slider.launchInterval()" onmouseover="slider.pause()">
 
-  <div class="slide" style="background-image: url(/img/1.jpg)">
+  @foreach ($photos as $photo)
+  <div class="slide" style="background-image: url('/storage/{{ $photo['image'] }}')">
     <h2 class="slider-title">BENOIT ROCHER</h2>
     <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
   </div>
-
-  <div class="slide" style="background-image: url(/img/2.jpg)">
-    <h2 class="slider-title">BENOIT ROCHER</h2>
-    <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
-  </div>
-
-  <div class="slide" style="background-image: url(/img/3.jpg)">
-    <h2 class="slider-title">BENOIT ROCHER</h2>
-    <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
-  </div>
-
-  <div class="slide" style="background-image: url(/img/4.jpg)">
-    <h2 class="slider-title">BENOIT ROCHER</h2>
-    <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
-  </div>
-
-  <div class="slide" style="background-image: url(/img/5.jpg)">
-    <h2 class="slider-title">BENOIT ROCHER</h2>
-    <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
-  </div>
-
-  <div class="slide" style="background-image: url(/img/6.jpg)">
-    <h2 class="slider-title">BENOIT ROCHER</h2>
-    <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
-  </div>
-
-  <div class="slide" style="background-image: url(/img/7.jpg)">
-    <h2 class="slider-title">BENOIT ROCHER</h2>
-    <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
-  </div>
-
-  <div class="slide" style="background-image: url(/img/8.jpg)">
-    <h2 class="slider-title">BENOIT ROCHER</h2>
-    <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
-  </div>
+  @endforeach
 
     <a href="#" class="fleche fleche-gauche" onclick="slider.slidePrecedent()">&lt;</a>
     <a href="#" class="fleche fleche-droite" onclick="slider.slideSuivant()">&gt;</a>
