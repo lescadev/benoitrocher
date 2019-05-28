@@ -25,9 +25,9 @@
               <nav>
                 <a href="{{ route('accueil') }}">Accueil</a>
                 <br>
-                <a href="{{ route('galerie') }}">Galerie</a>
+                <a href="Photos d'art">Photos d'art</a>
                 <br>
-                <a href="prestations.html">Prestations</a>
+                <a href="{{ route('prestations') }}">Prestations</a>
                 <br>
                 <a href="{{ route('contact') }}">Contact</a>
               </nav>

@@ -311,10 +311,19 @@ textarea {
     justify-content: center;  
 }
 
-/*gallerie*/
+/*galerie*/
 
 .galerie-content{
-    grid-column: 3 / 13;
-    height: 90vh;
+    grid-column: 3 / 14;
+    margin: 1vw;
+    column-count: 4;
+    column-gap: 1em;
 
+}
+
+.galerie-content img{
+    display: inline-block;
+    margin:1vh;
+    width: 100%;
+    
 }

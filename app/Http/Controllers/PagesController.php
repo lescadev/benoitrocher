@@ -28,8 +28,11 @@ class PagesController extends Controller
         return view('contact');
     }
 
-    public function galerie()
+    public function prestations()
     {
-        return view ('galerie');
+        $mariages = Photo::select('image')->where('categories_id', 1)->get()->toArray();
+        return view ('prestations',[
+            'mariages' => $mariages
+        ]);
     }
 }
