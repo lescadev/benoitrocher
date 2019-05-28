@@ -17,7 +17,9 @@
         <div class="headerr">
           <header>
             <div class="logo">
-              <img src="/storage/{{ $infos[0]['image_logo'] }}" href="{{ route('accueil') }}">
+              <a href="{{ route('accueil') }}">
+                <img src="/storage/{{ config('infos')[0]['image_logo'] }}" height="100%" width="100%"/>
+              </a>
             </div>
         
               <nav>

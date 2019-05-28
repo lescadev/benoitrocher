@@ -10,29 +10,38 @@ use App\Infosgenerale;
 
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+        $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
+        config(['infos' => $infos]);
+    }
+
+
+
     public function accueil()
     {
         $photos = Photo::select('image')->where('ajout_diapo', 1)->get()->toArray();
-        $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
 
         return view('accueil',[
             'photos' => $photos,
-            'infos' => $infos,
         ]);
     }
 
     public function mentions()
     {
-        return view('mentions');
+        return view('mentions',[
+        ]);
     }
 
     public function contact()
     {
-        return view('contact');
+        return view('contact',[
+        ]);
     }
 
     public function galerie()
     {
-        return view ('galerie');
+        return view ('galerie',[
+        ]);
     }
 }
