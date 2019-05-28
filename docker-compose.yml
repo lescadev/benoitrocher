@@ -1,0 +1,5 @@
+version: '18.09.2'
+
+services:
+  laravel-db:
+    image: mysql:8.0

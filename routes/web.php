@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
+
+Route::get('/', 'PagesController@accueil')->name('accueil');
+
+Route::get('/mentions-legales', 'PagesController@mentions')->name('mentions');
+
+Route::get('/contactez-nous', 'PagesController@contact')->name('contact');
+
+Route::get('/galerie', 'PagesController@galerie')->name('galerie');
