@@ -16,11 +16,9 @@
         <!-- Header -->
         <div class="headerr">
           <header>
-              <h1 class="titre">
-                <div class="logo">
-                <a href="{{ route('accueil') }}">Ben Roc</a>
-              </div>
-              </h1>
+            <div class="logo">
+              <img src="/storage/{{ $infos[0]['image_logo'] }}" href="{{ route('accueil') }}">
+            </div>
         
               <nav>
                 <a href="{{ route('accueil') }}">Accueil</a>

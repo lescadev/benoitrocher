@@ -6,15 +6,18 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Photo;
+use App\Infosgenerale;
 
 class PagesController extends Controller
 {
     public function accueil()
     {
         $photos = Photo::select('image')->where('ajout_diapo', 1)->get()->toArray();
+        $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
 
         return view('accueil',[
-            'photos' => $photos
+            'photos' => $photos,
+            'infos' => $infos,
         ]);
     }
 
