@@ -79,6 +79,35 @@ nav a:hover {
     transition: color 0.5s ease;
 }
 
+nav #prestations{
+    position: relative;
+}
+
+nav #prestations .prestation{
+    display: none;
+    position: relative;
+    width: 6em;
+    height: 10em;
+}
+
+nav #prestations:hover .prestation{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-around;
+    transform: translate(80%, -10vh);
+    /*left: 90%;
+    bottom: 0.5vh;*/
+    text-overflow: auto;
+    background-color: rgb(199, 199, 190);
+    border: 0.1rem solid;
+}
+
+nav #prestations .prestation div{
+    padding: 10px;
+    position: relative;
+}
+
 /*pied de page*/
 
 footer{

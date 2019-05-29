@@ -27,15 +27,16 @@
                 <br>
                 <a href="{{ route('galerie') }}">Galerie</a>
                 <br>
-                <a>
-                  <label>Prestations
-                    <select>
+                  <div id="prestations">
+                    <a>Prestations</a>
+                    <div class="prestation">
                       @foreach ($categories as $categorie)
-                            <option>{{ $categorie['name'] }}</option>
+                        <div>
+                          <a href="">{{ $categorie['name'] }}</a>
+                        </div>
                       @endforeach
-                    </select>
-                  </label>
-                </a>
+                    </div>
+                  </div>
                 <br>
                 <a href="{{ route('contact') }}">Contact</a>
               </nav>
