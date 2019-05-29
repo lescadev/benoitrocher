@@ -8,8 +8,8 @@
 
   @foreach ($photos as $photo)
   <div class="slide" style="background-image: url('/storage/{{ $photo['image'] }}')">
-    <h2 class="slider-title">BENOIT ROCHER</h2>
-    <p class="en-savoir-plus">PHOTOGRAPHE INDEPENDANT - MARIAGE - PORTRAIT - REPORTAGE - SAINT LEONARD DE NOBLAT</p>
+    <h2 class="slider-title">{{ config('infos')[0]['titre'] }}</h2>
+    <p class="en-savoir-plus">{{ config('infos')[0]['slogan'] }}</p>
   </div>
   @endforeach
 
