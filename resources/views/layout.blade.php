@@ -41,7 +41,7 @@
           <div class="detail">
               <a href="{{ route('mentions') }}">Mentions légales</a>
               <p>- Tous droits Réservé - 2019 -</p>
-              <a href="https://www.facebook.com/benroc.photographe" target="_blank">facebook.</a>
+              <a href="https://www.facebook.com/benroc.photographe" target="_blank">Facebook</a>
           </div>
 
         </footer>

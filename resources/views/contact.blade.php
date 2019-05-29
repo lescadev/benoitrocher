@@ -2,7 +2,13 @@
 
 @section('content')
 
-<!-- Formulaire-->
+<!-- titres de contact -->
+<div class="contacttitre">
+  <h1>Contactez-moi</h1>
+  <h2>pour en savoir plus sur me services en remplissant le formulaire ci-dessous:</h2>
+</div>
+
+<!-- Formulaire -->
 <div class="formulaire">
     <div class="firstcolumn">
       <div class="nom">
@@ -31,6 +37,15 @@
         <textarea id="message" type="text" name="message"></textarea>
       </div>
   </div>
+
+<!-- infos de contact -->
+
+<div class="infoscontact">
+  <img src="/img/map.png" alt="carte de Saint Léonard-de-Noblat" width="100%">
+  <h3>Infos de contact</h3>
+    <p>Mail : <strong>benoit.rocher@gmail.com</strong> <br> Tel : <strong>0699597502</strong>
+</div>
+
   <button type="button" class="boutonenvoyer">Envoyer</button>
 
 @endsection
