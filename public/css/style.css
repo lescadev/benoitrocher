@@ -238,55 +238,45 @@ p{
 }
 /*Formulaire*/
 .formulaire {
-    height: 64vh;
-    grid-column: 3 / 8;
+    height: 66vh;
+    grid-column: 3 / 9;
     display:flex;
-}
-    
-.firstcolumn {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 11vw;
 }
-    
+
 textarea {
-    grid-column: 5 / 9;
     width: 32vw;
     height: 40vh;
     margin-top: 1vh;
 }
     
-.message {
-    margin-left: 1.8vw;
-    grid-column: 5 / 9;
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-    
 .nom{
-    display:flex;
+    margin-top: 5vh;
+    display:inline-block;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
-    
-.prenom{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+
+.nom input{
+    padding: 0.5em;
+    width: 12vw;
 }
     
 .objet{
-    display:flex;
+    display:inline-block;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     
+}
+
+.objet input{
+    padding: 0.5em;
+    width: 12vw;
 }
     
 .email{
@@ -294,25 +284,91 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    
+}
+
+.email input{
+    padding: 0.5em;
+}
+
+.message {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
     
 .boutonenvoyer {
-    grid-column: 5 / 7;
+    grid-column: 4 / 6;
     height: 8vh;
     display: flex;
-    justify-content: center; 
-    margin-left: 5.2vw;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-left: 6vw;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: black; /* button text color */
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px; 
+    text-transform: uppercase;
+    line-height: 2;
+    position: relative;
+	text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.boutonenvoyer:before,
+.boutonenvoyer:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #3d3d3d; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+.boutonenvoyer:before{
+  background: #ebebeb; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.boutonenvoyer:hover{
+	color: white;
+}
+
+.boutonenvoyer:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+.slidebottomleft:after{
+    transform: translate3D(-100%,100%,0);
+}
+  
+.slidebottomleft:hover:after{
+      transform: translate3D(0,0,0);
+    transition: all .5s;
 }
 
 .contacttitre{
     grid-column: 3 / 13;
-    height: 16vh;
+    height: 10vh;
     text-align: center;
+    margin-top: 2vh;
 }
 
 .infoscontact{
     grid-column: 9 /13;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
