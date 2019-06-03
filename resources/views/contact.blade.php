@@ -5,7 +5,7 @@
 <!-- titres de contact -->
 <div class="contacttitre">
   <h1>Contactez-moi</h1>
-  <h2>pour en savoir plus sur me services en remplissant le formulaire ci-dessous:</h2>
+  <h2>pour en savoir plus sur mes services en remplissant le formulaire ci-dessous :</h2>
 </div>
 
 <!-- Formulaire -->
@@ -41,9 +41,16 @@
 <!-- infos de contact -->
 
 <div class="infoscontact">
-  <img src="/img/map.png" alt="carte de Saint Léonard-de-Noblat" width="100%">
-  <h3>Infos de contact</h3>
-    <p>Mail : <strong>benoit.rocher@gmail.com</strong> <br> Tel : <strong>0699597502</strong>
+   <!-- <img src="/img/map.png" alt="carte de Saint Léonard-de-Noblat" width="100%"> -->
+  <h3>Infos de contact :</h3>
+    <p>
+      Mail : <strong>benoit.roc@gmail.com</strong> <br> Tel : <strong>0699597502</strong> <br> <br>
+      <a href="https://www.instagram.com/rocherdeclencheur/ " target="_blank">Instagram</a> <br>
+      <a href="https://www.facebook.com/benroc.photographe" target="_blank">Facebook</a> <br> <br>
+      Adresse : <strong>18 rue Louis Valadas <br> 87400 St Léonard de Noblat</strong>
+      
+      
+    </p>
 </div>
 
   <button type="button" class="boutonenvoyer">Envoyer</button>
