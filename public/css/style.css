@@ -91,16 +91,16 @@ nav #prestations .prestation{
 }
 
 nav #prestations:hover .prestation{
-    display: flex;
-    flex-direction: column;
+    display: block;
     position: absolute;
     justify-content: space-around;
-    transform: translate(80%, -10vh);
-    /*left: 90%;
-    bottom: 0.5vh;*/
-    text-overflow: auto;
+    transform: translate(80%, -10rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-size: cover;
+    box-sizing: content-box;
     background-color: rgb(199, 199, 190);
-    border: 0.1rem solid;
+    outline: 0.1rem solid;
 }
 
 nav #prestations .prestation div{
