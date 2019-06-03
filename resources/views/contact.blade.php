@@ -4,7 +4,7 @@
 
 <!-- titres de contact -->
 <div class="contacttitre">
-  <h2> Contactez-moi pour en savoir plus sur mes services en remplissant le formulaire ci-dessous :</h2>
+  <h1> Contactez-moi en remplissant le formulaire ci-dessous :</h1>
 </div>
 
 <!-- Formulaire -->
