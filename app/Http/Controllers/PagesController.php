@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Photo;
 use App\Infosgenerale;
+use App\Mention;
 
 class PagesController extends Controller
 {
@@ -14,9 +15,10 @@ class PagesController extends Controller
     {
         $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
         config(['infos' => $infos]);
+
+        $changementions = Mention::select('titre','mentions')->get()->toArray();
+        config(['changementions' => $changementions]);
     }
-
-
 
     public function accueil()
     {
