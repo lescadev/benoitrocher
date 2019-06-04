@@ -45,19 +45,27 @@ class PagesController extends Controller
         ]);
     }
 
-    public function prestations()
+    public function prestation()
     {
-        $prestations = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name','=', 'Mariage')->get()->toArray();
-        return view ('prestations',[
-            'prestations' => $prestations
+        $prestationPhotos = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name','=', 'Mariage')->get()->toArray();
+        return view ('prestation',[
+            'prestationPhotos' => $prestationPhotos
         ]);
     }
 
     public function photodart()
     {
-        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name', '=', 'photo dart')->get()->toArray();
+        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name', '=', 'photodart')->get()->toArray();
         return view ('photodart',[
             'arts' => $arts
         ]);
     }
+    
+    /*public function layout()
+    {
+        $categories = Categorie::select('name')->get()->toArray();
+        return view ('layout',[
+            'categories' => $categories
+        ]);
+    }*/
 }
