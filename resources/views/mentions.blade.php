@@ -5,8 +5,13 @@
 <!-- Texte des mentions légales -->
 <div class="description">
 
-  <p class="titre_desc">{{ config('changementions')[0]['titre'] }}</p>
+  <div class="titre_desc">
 
-  <p class="para1">{{ config('changementions')[0]['mentions'] }}</p>
+     {!! config('changementions')[0]['titre'] !!}
+  </div>
 
+  <div class="para1">
+     {!! config('changementions')[0]['mentions'] !!}
+  </div>
+</div>
 @endsection
