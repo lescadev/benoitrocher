@@ -35,7 +35,6 @@ class PagesController extends Controller
         $categories = Categories::select('name')->get()->toArray();
         return view('mentions',[
             'categories' => $categories
-        return view('mentions',[
         ]);
     }
 
@@ -44,7 +43,6 @@ class PagesController extends Controller
         $categories = Categories::select('name')->get()->toArray();
         return view('contact',[
             'categories' => $categories
-        return view('contact',[
         ]);
     }
 
@@ -53,7 +51,6 @@ class PagesController extends Controller
         $categories = Categories::select('name')->get()->toArray();
         return view ('galerie',[
             'categories' => $categories
-        return view ('galerie',[
         ]);
     }
     /*public function layout()
