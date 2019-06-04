@@ -11,6 +11,14 @@ use App\Infosgenerale;
 
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+        $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
+        config(['infos' => $infos]);
+    }
+
+
+
     public function accueil()
     {
         $photos = Photo::select('image')->where('ajout_diapo', 1)->get()->toArray();
@@ -27,6 +35,7 @@ class PagesController extends Controller
         $categories = Categories::select('name')->get()->toArray();
         return view('mentions',[
             'categories' => $categories
+        return view('mentions',[
         ]);
     }
 
@@ -35,6 +44,7 @@ class PagesController extends Controller
         $categories = Categories::select('name')->get()->toArray();
         return view('contact',[
             'categories' => $categories
+        return view('contact',[
         ]);
     }
 
@@ -43,6 +53,7 @@ class PagesController extends Controller
         $categories = Categories::select('name')->get()->toArray();
         return view ('galerie',[
             'categories' => $categories
+        return view ('galerie',[
         ]);
     }
     /*public function layout()

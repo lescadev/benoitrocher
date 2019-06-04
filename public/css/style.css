@@ -49,14 +49,13 @@ header {
     border-color: black;
     text-align: center;
 }
-.titre .logo a{
-    text-decoration: none;  
-    color: black;
-    display: block;
+
+.logo{
+    margin-top: 5vh;
+    height: 15vh;
+    width: 15vh;
 }
-.titre a{
-    text-align: center;
-}
+
 nav {
     margin-top: 80px;
     display: flex;

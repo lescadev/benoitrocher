@@ -16,11 +16,11 @@
         <!-- Header -->
         <div class="headerr">
           <header>
-              <h1 class="titre">
-                <div class="logo">
-                <a href="{{ route('accueil') }}">Ben Roc</a>
-              </div>
-              </h1>
+            <div class="logo">
+              <a href="{{ route('accueil') }}">
+                <img src="/storage/{{ config('infos')[0]['image_logo'] }}" height="100%" width="100%"/>
+              </a>
+            </div>
         
               <nav>
                 <a href="{{ route('accueil') }}">Accueil</a>
