@@ -25,7 +25,7 @@
             <nav>
               <a href="{{ route('accueil') }}">Accueil</a>
               <br>
-              <a href="{{ route('prestations') }}">Prestations</a>
+              <a href="{{ route('prestation') }}">Prestations</a>
               <br>
             <a href="{{ route('photodart')}}">Photo d'art</a>
               <br>
