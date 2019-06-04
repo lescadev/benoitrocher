@@ -22,15 +22,15 @@
               </a>
             </div>
         
-              <nav>
-                <a href="{{ route('accueil') }}">Accueil</a>
-                <br>
-                <a href="{{ route('galerie') }}">Galerie</a>
-                <br>
-                <a href="prestations.html">Prestations</a>
-                <br>
-                <a href="{{ route('contact') }}">Contact</a>
-              </nav>
+            <nav>
+              <a href="{{ route('accueil') }}">Accueil</a>
+              <br>
+              <a href="{{ route('prestations') }}">Prestations</a>
+              <br>
+            <a href="{{ route('photodart')}}">Photo d'art</a>
+              <br>
+              <a href="{{ route('contact') }}">Contact</a>
+            </nav>
             </header>
       </div>
        
@@ -50,6 +50,7 @@
 
       <script src="/js/jquery-3.3.1.min.js"></script>
       <script type="text/javascript" src="/js/sliderpoo.js"></script>
+      <script type="text/javascript" src="/js/galerie.js" async></script>
 
   </body>
 </html>

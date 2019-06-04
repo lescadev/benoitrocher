@@ -44,4 +44,20 @@ class PagesController extends Controller
         return view ('galerie',[
         ]);
     }
+
+    public function prestations()
+    {
+        $prestations = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name','=', 'Mariage')->get()->toArray();
+        return view ('prestations',[
+            'prestations' => $prestations
+        ]);
+    }
+
+    public function photodart()
+    {
+        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name', '=', 'photo dart')->get()->toArray();
+        return view ('photodart',[
+            'arts' => $arts
+        ]);
+    }
 }
