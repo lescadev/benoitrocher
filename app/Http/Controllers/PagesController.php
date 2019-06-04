@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Photo;
 use App\Categories;
+use App\Infosgenerale;
 
 class PagesController extends Controller
 {

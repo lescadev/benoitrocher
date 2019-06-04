@@ -28,7 +28,7 @@
                 <a href="{{ route('galerie') }}">Galerie</a>
                 <br>
                   <div id="prestations">
-                    <a>Prestations</a>
+                    <a>Prestations</a> >
                     <div class="prestation">
                       @foreach ($categories as $categorie)
                         <div>
