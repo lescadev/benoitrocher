@@ -25,14 +25,12 @@
             <nav>
               <a href="{{ route('accueil') }}">Accueil</a>
               <br>
-              <a href="{{ route('prestation') }}">Prestations</a>
-              <br>
               <div id="prestations">
                 <a>Prestations</a> >
                 <div class="prestation">
-                  @foreach ($categories as $categorie)
+                  @foreach (config('categories') as $categorie)
                     <div>
-                      <a href="">{{ $categorie['name'] }}</a>
+                      <a href="{{ route('prestation') }}">{{ $categorie['name'] }}</a>
                     </div>
                   @endforeach
                 </div>
