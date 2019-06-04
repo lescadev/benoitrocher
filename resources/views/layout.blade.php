@@ -21,17 +21,28 @@
                 <img src="/storage/{{ config('infos')[0]['image_logo'] }}" height="100%" width="100%"/>
               </a>
             </div>
-        
+      
             <nav>
               <a href="{{ route('accueil') }}">Accueil</a>
               <br>
               <a href="{{ route('prestation') }}">Prestations</a>
               <br>
-            <a href="{{ route('photodart')}}">Photo d'art</a>
+              <div id="prestations">
+                <a>Prestations</a> >
+                <div class="prestation">
+                  @foreach ($categories as $categorie)
+                    <div>
+                      <a href="">{{ $categorie['name'] }}</a>
+                    </div>
+                  @endforeach
+                </div>
+              </div>
+              <br>
+              <a href="{{ route('photodart')}}">Photo d'art</a>
               <br>
               <a href="{{ route('contact') }}">Contact</a>
             </nav>
-            </header>
+          </header>
       </div>
        
       @yield('content')
