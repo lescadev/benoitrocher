@@ -27,7 +27,16 @@
                 <br>
                 <a href="{{ route('galerie') }}">Galerie</a>
                 <br>
-                <a href="prestations.html">Prestations</a>
+                  <div id="prestations">
+                    <a>Prestations</a> >
+                    <div class="prestation">
+                      @foreach ($categories as $categorie)
+                        <div>
+                          <a href="">{{ $categorie['name'] }}</a>
+                        </div>
+                      @endforeach
+                    </div>
+                  </div>
                 <br>
                 <a href="{{ route('contact') }}">Contact</a>
               </nav>
