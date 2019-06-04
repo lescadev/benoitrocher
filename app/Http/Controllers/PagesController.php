@@ -15,6 +15,8 @@ class PagesController extends Controller
     {
         $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
         config(['infos' => $infos]);
+        $categories = Categories::select('name')->where('slug', '<>', 'photo-dart')->get()->toArray();
+        config(['categories' => $categories]);
     }
 
 
@@ -22,42 +24,34 @@ class PagesController extends Controller
     public function accueil()
     {
         $photos = Photo::select('image')->where('ajout_diapo', 1)->get()->toArray();
-        $categories = Categories::select('name')->get()->toArray();
-
         return view('accueil',[
             'photos' => $photos,
-            'categories' => $categories
         ]);
     }
 
     public function mentions()
     {
-        $categories = Categories::select('name')->get()->toArray();
-        return view('mentions',[
-            'categories' => $categories
-        ]);
+        return view('mentions');
     }
 
     public function contact()
     {
-        $categories = Categories::select('name')->get()->toArray();
-        return view('contact',[
-            'categories' => $categories
+        return view('contact');
+    }
+
+    public function prestation()
+    {
+        $prestationPhotos = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name','=', 'Mariage')->get()->toArray();
+        return view ('prestation',[
+            'prestationPhotos' => $prestationPhotos
         ]);
     }
 
-    public function galerie()
+    public function photodart()
     {
-        $categories = Categories::select('name')->get()->toArray();
-        return view ('galerie',[
-            'categories' => $categories
+        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name', '=', 'photodart')->get()->toArray();
+        return view ('photodart',[
+            'arts' => $arts
         ]);
     }
-    /*public function layout()
-    {
-        $categories = Categorie::select('name')->get()->toArray();
-        return view ('layout',[
-            'categories' => $categories
-        ]);
-    }*/
 }

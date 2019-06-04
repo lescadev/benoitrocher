@@ -22,4 +22,6 @@ Route::get('/mentions-legales', 'PagesController@mentions')->name('mentions');
 
 Route::get('/contactez-nous', 'PagesController@contact')->name('contact');
 
-Route::get('/galerie', 'PagesController@galerie')->name('galerie');
+Route::get('/prestation', 'PagesController@prestation')->name('prestation');
+
+Route::get('/photodart', 'PagesController@photodart')->name('photodart');

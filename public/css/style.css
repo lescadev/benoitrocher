@@ -335,8 +335,52 @@ textarea {
 
 /*gallerie*/
 
-.galerie-content{
-    grid-column: 3 / 13;
-    height: 90vh;
+#galeriecontent{
+    grid-column: 3 / 14;
+    margin: 1vw;
+    column-count: 4;
+    column-gap: 1em;
+    overflow: hidden;
+    height: 65vh;
 
+}
+
+#galeriecontent img{
+      
+    display: inline-block;
+    margin:1vh;
+    width: 100%;
+    
+}
+
+.afficher{
+    grid-column: 12 / 13; 
+    height:6vh;
+    margin-right: 2vw;
+    border: 1px solid black;
+    background-color: rgb(199, 199, 199);
+    font-family: 'PT Sans', 'sans-serif';
+    font-size: 0.8em;
+    font-weight: bold;
+
+}
+
+.afficher:hover {
+    color: red;
+    transition: color 0.5s ease;
+}
+
+.galerie-art{ 
+    grid-column: 3 / 14;
+    margin: 1vw;
+    column-count: 4;
+    column-gap: 1em;
+
+}
+
+.galerie-art img{
+    display: inline-block;
+    margin:1vh;
+    width: 100%;
+    
 }
