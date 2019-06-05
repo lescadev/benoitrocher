@@ -8,9 +8,6 @@
 
 </div>
 <button class="afficher" type="button" class="titre" onclick="voir()">Tout Voir</button>
-<div class="infopresta">
-        @yield('descriptionpresta')
-</div>
 <!-- titres de contact -->
 <div class="contacttitre">
   <h2> Contactez-moi en remplissant le formulaire ci-dessous :</h2>
@@ -56,5 +53,9 @@
     <button type="submit" class="boutonenvoyer slidebottomleft">Envoyer</button>
     
     </form>
+</div>
+
+<div class="infopresta">
+        @yield('descriptionpresta')
 </div>
 @endsection
