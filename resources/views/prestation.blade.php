@@ -9,3 +9,8 @@
 @endforeach
 
 @endsection
+
+@section('descriptionpresta')
+
+{!! $prestationInfos['champstexte'] !!}
+@endsection
