@@ -18,8 +18,6 @@ class PagesController extends Controller
         config(['infos' => $infos]);
         $categories = Categories::select('name')->where('slug', '<>', 'photo-dart')->get()->toArray();
         config(['categories' => $categories]);
-        $changementions = Mention::select('titre','mentions')->get()->toArray();
-        config(['changementions' => $changementions]);
     }
 
     public function accueil()
@@ -32,7 +30,10 @@ class PagesController extends Controller
 
     public function mentions()
     {
-        return view('mentions');
+        $mentions = Mention::select('titre','mentions')->get()->toArray();
+        return view('mentions', [
+            'mentions' => $mentions,
+        ]);
     }
 
     public function contact()
