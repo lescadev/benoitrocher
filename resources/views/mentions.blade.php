@@ -5,10 +5,7 @@
 <!-- Texte des mentions légales -->
 <div class="description">
 
-  <div class="titre_desc">
-
-     {!! config('changementions')[0]['titre'] !!}
-  </div>
+     <h1 class="titre_desc" >{!! config('changementions')[0]['titre'] !!}</h1>
 
   <div class="para1">
      {!! config('changementions')[0]['mentions'] !!}
