@@ -18,8 +18,6 @@ class PagesController extends Controller
         config(['infos' => $infos]);
         $categories = Categories::select('name', 'slug')->where('slug', '<>', 'photo-dart')->get()->toArray();
         config(['categories' => $categories]);
-        $changementions = Mention::select('titre','mentions')->get()->toArray();
-        config(['changementions' => $changementions]); 
     }
 
     public function accueil()
@@ -32,7 +30,10 @@ class PagesController extends Controller
 
     public function mentions()
     {
-        return view('mentions');
+        $mentions = Mention::select('titre','mentions')->get()->toArray();
+        return view('mentions', [
+            'mentions' => $mentions,
+        ]);
     }
 
     public function contact()
@@ -42,10 +43,16 @@ class PagesController extends Controller
 
     public function prestation($name)
     {
-        $prestationPhotos = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug','=', $name)->get()->toArray();
+        $prestationPhotos = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug','=', '$name')->get()->toArray();
+        $prestationInfos = Categories::find(2);
+        
         return view ('prestation',[
-            'prestationPhotos' => $prestationPhotos
+            'prestationPhotos' => $prestationPhotos, 
+            'prestationInfos' => $prestationInfos
+            
         ]);
+
+        
     }
 
     public function photodart()
