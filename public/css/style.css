@@ -264,6 +264,16 @@ p{
     margin-left: 11vw;
 }
 
+.formulaire_presta {
+    height: 78vh;
+    grid-column: 4 / 11;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11vw;
+}
+
 textarea {
     width: 32vw;
     height: 40vh;
@@ -294,6 +304,37 @@ textarea {
 .objet input{
     padding: 0.5em;
     width: 31.3vw;
+}
+
+.presta{
+    display: flex;
+    height: 1vh;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 244);
+}
+
+.presta label{
+    display: inline-block;
+    font-size: 0.7em;
+    text-align: left;
+    width: 15vw;
+    height: 2.7vh;
+    padding: 0.5em;
+    outline: solid 0.1em grey;
+    background-color: white;
+}
+.presta label select{
+    border: none;
+    font-size: 0.7rem;
+    width: 5vw;
+    background-color: white;
+}
+
+.presta label input{
+    border: none;
+    font-size: 0.7rem;
+    width: 6vw;
 }
     
 .email{
