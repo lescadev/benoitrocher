@@ -31,7 +31,7 @@
                 <div class="prestation">
                   @foreach (config('categories') as $categorie)
                     <div>
-                      <a href="{{ route('prestation') }}">{{ $categorie['name'] }}</a>
+                      <a href="{{ route('prestation', ['name' => $categorie['slug']]) }}">{{ $categorie['name'] }}</a>
                     </div>
                   @endforeach
                 </div>

@@ -25,7 +25,7 @@ Route::get('/contactez-moi', 'PagesController@contact')->name('contact');
 Route::get('contact', 'ContactFormController@create');
 Route::post('contact', 'ContactFormController@store');
 
-Route::get('/prestation', 'PagesController@prestation')->name('prestation');
+Route::get('/prestation/{name}', 'PagesController@prestation')->name('prestation');
 
 Route::get('/photodart', 'PagesController@photodart')->name('photodart');
 
