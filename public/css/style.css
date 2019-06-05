@@ -454,3 +454,12 @@ textarea {
     width: 100%;
     
 }
+
+/*description presta*/
+.infopresta {
+    grid-column: 3 / 14;
+    display: flex;
+    padding-top: 10vh;
+    align-content: left;
+    margin-left: 3vw;
+}
