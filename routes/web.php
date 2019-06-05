@@ -20,6 +20,12 @@ Route::get('/', 'PagesController@accueil')->name('accueil');
 
 Route::get('/mentions-legales', 'PagesController@mentions')->name('mentions');
 
-Route::get('/contactez-nous', 'PagesController@contact')->name('contact');
+Route::get('/contactez-moi', 'PagesController@contact')->name('contact');
 
-Route::get('/galerie', 'PagesController@galerie')->name('galerie');
+Route::get('contact', 'ContactFormController@create');
+Route::post('contact', 'ContactFormController@store');
+
+Route::get('/prestation/{name}', 'PagesController@prestation')->name('prestation');
+
+Route::get('/photodart', 'PagesController@photodart')->name('photodart');
+

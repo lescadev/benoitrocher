@@ -8,6 +8,7 @@
     <title>Benoit Rocher - Mentions légales</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 
   <body>
@@ -16,22 +17,31 @@
         <!-- Header -->
         <div class="headerr">
           <header>
-              <h1 class="titre">
-                <div class="logo">
-                <a href="{{ route('accueil') }}">Ben Roc</a>
+            <div class="logo">
+              <a href="{{ route('accueil') }}">
+                <img src="/storage/{{ config('infos')[0]['image_logo'] }}" height="100%" width="100%"/>
+              </a>
+            </div>
+      
+            <nav>
+              <a href="{{ route('accueil') }}">Accueil</a>
+              <br>
+              <div id="prestations">
+                <a>Prestations</a> >
+                <div class="prestation">
+                  @foreach (config('categories') as $categorie)
+                    <div>
+                      <a href="{{ route('prestation', ['name' => $categorie['slug']]) }}">{{ $categorie['name'] }}</a>
+                    </div>
+                  @endforeach
+                </div>
               </div>
-              </h1>
-        
-              <nav>
-                <a href="{{ route('accueil') }}">Accueil</a>
-                <br>
-                <a href="{{ route('galerie') }}">Galerie</a>
-                <br>
-                <a href="prestations.html">Prestations</a>
-                <br>
-                <a href="{{ route('contact') }}">Contact</a>
-              </nav>
-            </header>
+              <br>
+              <a href="{{ route('photodart')}}">Photo d'art</a>
+              <br>
+              <a href="{{ route('contact') }}">Contact</a>
+            </nav>
+          </header>
       </div>
        
       @yield('content')
@@ -40,8 +50,7 @@
         <footer>
           <div class="detail">
               <a href="{{ route('mentions') }}">Mentions légales</a>
-              <p>- Tous droits Réservé - 2019 -</p>
-              <a href="https://www.facebook.com/benroc.photographe" target="_blank">facebook.</a>
+              <p>- Tous droits Réservé - 2019</p>
           </div>
 
         </footer>
@@ -50,6 +59,7 @@
 
       <script src="/js/jquery-3.3.1.min.js"></script>
       <script type="text/javascript" src="/js/sliderpoo.js"></script>
+      <script type="text/javascript" src="/js/galerie.js" async></script>
 
   </body>
 </html>

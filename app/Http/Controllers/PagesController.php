@@ -6,21 +6,34 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Photo;
+use App\Categories;
+use App\Infosgenerale;
+use App\Mention;
 
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+        $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
+        config(['infos' => $infos]);
+        $categories = Categories::select('name', 'slug')->where('slug', '<>', 'photo-dart')->get()->toArray();
+        config(['categories' => $categories]);
+    }
+
     public function accueil()
     {
         $photos = Photo::select('image')->where('ajout_diapo', 1)->get()->toArray();
-
         return view('accueil',[
-            'photos' => $photos
+            'photos' => $photos,
         ]);
     }
 
     public function mentions()
     {
-        return view('mentions');
+        $mentions = Mention::select('titre','mentions')->get()->toArray();
+        return view('mentions', [
+            'mentions' => $mentions,
+        ]);
     }
 
     public function contact()
@@ -28,8 +41,25 @@ class PagesController extends Controller
         return view('contact');
     }
 
-    public function galerie()
+    public function prestation($name)
     {
-        return view ('galerie');
+        $prestationPhotos = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug','=', $name)->get()->toArray();
+        $prestationInfos = Categories::find(2);
+        
+        return view ('prestation',[
+            'prestationPhotos' => $prestationPhotos, 
+            'prestationInfos' => $prestationInfos
+            
+        ]);
+
+        
+    }
+
+    public function photodart()
+    {
+        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug', '=', 'photo-dart')->get()->toArray();
+        return view ('photodart',[
+            'arts' => $arts
+        ]);
     }
 }
