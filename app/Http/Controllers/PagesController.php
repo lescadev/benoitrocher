@@ -16,10 +16,8 @@ class PagesController extends Controller
     {
         $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
         config(['infos' => $infos]);
-        $categories = Categories::select('name')->where('slug', '<>', 'photo-dart')->get()->toArray();
+        $categories = Categories::select('name', 'slug')->where('slug', '<>', 'photo-dart')->get()->toArray();
         config(['categories' => $categories]);
-        $changementions = Mention::select('titre','mentions')->get()->toArray();
-        config(['changementions' => $changementions]); 
     }
 
     public function accueil()
@@ -32,7 +30,10 @@ class PagesController extends Controller
 
     public function mentions()
     {
-        return view('mentions');
+        $mentions = Mention::select('titre','mentions')->get()->toArray();
+        return view('mentions', [
+            'mentions' => $mentions,
+        ]);
     }
 
     public function contact()
@@ -40,17 +41,23 @@ class PagesController extends Controller
         return view('contact');
     }
 
-    public function prestation()
+    public function prestation($name)
     {
-        $prestationPhotos = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name','=', 'Mariage')->get()->toArray();
+        $prestationPhotos = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug','=', $name)->get()->toArray();
+        $prestationInfos = Categories::find(2);
+        
         return view ('prestation',[
-            'prestationPhotos' => $prestationPhotos
+            'prestationPhotos' => $prestationPhotos, 
+            'prestationInfos' => $prestationInfos
+            
         ]);
+
+        
     }
 
     public function photodart()
     {
-        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.name', '=', 'photodart')->get()->toArray();
+        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug', '=', 'photo-dart')->get()->toArray();
         return view ('photodart',[
             'arts' => $arts
         ]);
