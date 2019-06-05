@@ -23,17 +23,26 @@
                 <img src="/storage/{{ config('infos')[0]['image_logo'] }}" height="100%" width="100%"/>
               </a>
             </div>
-        
-              <nav>
-                <a href="{{ route('accueil') }}">Accueil</a>
-                <br>
-                <a href="{{ route('galerie') }}">Galerie</a>
-                <br>
-                <a href="prestations.html">Prestations</a>
-                <br>
-                <a href="{{ route('contact') }}">Contact</a>
-              </nav>
-            </header>
+      
+            <nav>
+              <a href="{{ route('accueil') }}">Accueil</a>
+              <br>
+              <div id="prestations">
+                <a>Prestations</a> >
+                <div class="prestation">
+                  @foreach (config('categories') as $categorie)
+                    <div>
+                      <a href="{{ route('prestation') }}">{{ $categorie['name'] }}</a>
+                    </div>
+                  @endforeach
+                </div>
+              </div>
+              <br>
+              <a href="{{ route('photodart')}}">Photo d'art</a>
+              <br>
+              <a href="{{ route('contact') }}">Contact</a>
+            </nav>
+          </header>
       </div>
        
       @yield('content')
@@ -51,6 +60,7 @@
 
       <script src="/js/jquery-3.3.1.min.js"></script>
       <script type="text/javascript" src="/js/sliderpoo.js"></script>
+      <script type="text/javascript" src="/js/galerie.js" async></script>
 
   </body>
 </html>
