@@ -255,7 +255,7 @@ p{
 }
 /*Formulaire*/
 .formulaire {
-    height: 66vh;
+    height: 78vh;
     grid-column: 3 / 9;
     display:flex;
     flex-direction: column;
@@ -320,7 +320,6 @@ textarea {
     display: flex;
     justify-content: center;
     margin-top: 2vh;
-    margin-left: 6vw;
     font-size: 1.3em;
     cursor: pointer;
     color: black; /* button text color */
@@ -378,7 +377,7 @@ textarea {
 
 .contacttitre{
     grid-column: 3 / 13;
-    height: 10vh;
+    height: 8vh;
     text-align: center;
     margin-top: 2vh;
 }
