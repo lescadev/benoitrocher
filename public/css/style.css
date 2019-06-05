@@ -130,7 +130,7 @@ p{
 	display: flex;
 	justify-content: center;
     align-items: flex-end;
-    height: 10vh;
+    height: 12vh;
 }
 
 .detail a{
@@ -237,9 +237,10 @@ p{
 
 .description {
     margin-top: 9vh;
-    margin-left: 5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     grid-column: 3 / 13;
-    height: 81vh;
+    height: 79vh;
     text-align: left;
 }
 
@@ -249,14 +250,7 @@ p{
     text-align: left;
 }
 
-.para1 p {
-    font-size: 15px;
-    text-align: left;
-    margin-bottom: 50px;
-}
-
-.para2 p {
-    font-size: 15px;
+.para1 {
     text-align: left;
 }
 /*Formulaire*/

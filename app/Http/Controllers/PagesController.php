@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Photo;
 use App\Categories;
 use App\Infosgenerale;
+use App\Mention;
 
 class PagesController extends Controller
 {
@@ -17,9 +18,9 @@ class PagesController extends Controller
         config(['infos' => $infos]);
         $categories = Categories::select('name')->where('slug', '<>', 'photo-dart')->get()->toArray();
         config(['categories' => $categories]);
+        $changementions = Mention::select('titre','mentions')->get()->toArray();
+        config(['changementions' => $changementions]); 
     }
-
-
 
     public function accueil()
     {
