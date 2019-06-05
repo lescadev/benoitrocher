@@ -9,23 +9,28 @@
 
 <!-- Formulaire -->
 <div class="formulaire">
-    <form role="form" method="post" id="reused_form">
+    <form action="/contact" role="form" method="POST" id="reused_form">
     <div class="firstcolumn">
       <div class="nom">
-        <input id="name" type="text" name="name" placeholder="Nom" required> 
-        <input id="email" type="text" name="email" placeholder="E-mail" required><br>
+        <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Nom" required> 
+        <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="E-mail" required><br>
       </div>
       <br/>
       <br/>
       <div class="objet">
-          <input id="objet" type="text" name="objet" placeholder="Objet" required><br>
+          <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required><br>
       </div>
       <br/>
       <br/>
     </div>
     <div class="message">
-      <textarea id="message" type="text" name="message" maxlength="6000" placeholder="Message" required></textarea>
+      <textarea id="message" type="text" name="message" value="{{ old('message') }}" maxlength="6000" placeholder="Message" required></textarea>
     </div>
+
+    @csrf
+
+    <button type="submit" class="boutonenvoyer slidebottomleft">Envoyer</button>
+    
     </form>
 </div>
 
@@ -43,7 +48,5 @@
       
     </p>
 </div>
-
-  <button type="submit" class="boutonenvoyer slidebottomleft">Envoyer</button>
 
 @endsection
