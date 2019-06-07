@@ -15,7 +15,7 @@
 
 <!-- Formulaire -->
 <div class="formulaire_presta">
-    <form action="galerieLayout" role="form" method="POST" id="reused_form">
+    <form action="/prestation" role="form" method="POST" id="reused_form">
     <div class="firstcolumn">
       <div class="nom">
         <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Nom" required> 
