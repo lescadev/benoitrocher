@@ -70,6 +70,7 @@ nav {
 }
 
 nav a {
+    margin-left: -0.5vw;
     text-decoration: none;
     color: black;
 }
@@ -97,7 +98,7 @@ nav #prestations:hover .prestation{
 }
 
 nav #prestations .prestation div{
-    padding: 10px;
+    padding: 1.1vw;
     position: relative;
 }
 
@@ -316,25 +317,26 @@ textarea {
 
 .presta label{
     display: inline-block;
-    font-size: 0.7em;
+    font-size: 0.65em;
     text-align: left;
     width: 15vw;
-    height: 2.7vh;
+    height: 3.1vh;
     padding: 0.5em;
-    outline: solid 0.1em grey;
+    outline: solid 0.1em rgb(191, 191, 191);
     background-color: white;
 }
-.presta label select{
-    border: none;
-    font-size: 0.7rem;
-    width: 5vw;
-    background-color: white;
+
+.presta input{
+    display: inline-block;
+    width: 15vw;
+    padding: 0.5em;
 }
 
 .presta label input{
     border: none;
     font-size: 0.7rem;
     width: 6vw;
+    padding: 0;
 }
     
 .email{

@@ -15,7 +15,7 @@
 
 <!-- Formulaire -->
 <div class="formulaire_presta">
-    <form action="/contact" role="form" method="POST" id="reused_form">
+    <form action="galerieLayout" role="form" method="POST" id="reused_form">
     <div class="firstcolumn">
       <div class="nom">
         <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Nom" required> 
@@ -29,16 +29,10 @@
       <br/>
       <br/>
       <div class="presta">
-      	<label>Prestation:
-        	<select id="categories" name="categorie" required>
-        		@foreach (config('categories') as $categorie)
-        		<option>{{ $categorie['name'] }}</option>
-        		@endforeach
-        	</select> 
-        </label>
         <label>Date souhaitée:
         	<input id="date" type="date" name="date" value="{{ old('date') }}" placeholder="Date" required>
     	</label>
+    	<input id="tel" type="tel" name="telephone" value="{{ old('tel') }}" placeholder="Téléphone">
         <br>
       </div>
       <br/>
