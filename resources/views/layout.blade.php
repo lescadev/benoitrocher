@@ -49,7 +49,7 @@
         <!-- Footer -->
         <footer>
           <div class="detail">
-              <a href="{{ route('mentions') }}">Mentions légales</a>
+              <a href="{{ route('mentions') }}">Mentions légales&nbsp;</a>
               <p>- Tous droits Réservé - 2019</p>
           </div>
 
