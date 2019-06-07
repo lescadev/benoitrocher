@@ -8,10 +8,18 @@
 
 </div>
 <button class="afficher" type="button" class="titre" onclick="voir()">Tout Voir</button>
+
+<!-- description presta -->
+
+<div class="infopresta">
+  @yield('descriptionpresta')
+</div>
+
 <!-- titres de contact -->
 <div class="contacttitre">
   <h2> Contactez-moi en remplissant le formulaire ci-dessous :</h2>
 </div>
+
 
 <!-- Formulaire -->
 <div class="formulaire_presta">
@@ -49,7 +57,5 @@
     </form>
 </div>
 
-<div class="infopresta">
-        @yield('descriptionpresta')
-</div>
+
 @endsection
