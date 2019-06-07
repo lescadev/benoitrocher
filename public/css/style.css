@@ -502,7 +502,6 @@ textarea {
 .infopresta {
     grid-column: 3 / 14;
     display: flex;
-    padding-top: 10vh;
     align-content: left;
     margin-left: 3vw;
 }
