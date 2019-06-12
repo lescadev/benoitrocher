@@ -12,5 +12,6 @@
 
 @section('descriptionpresta')
 
-{!! $prestationInfos['champstexte'] !!}
+{!! $prestationInfos[0]['champstexte'] !!}
+    
 @endsection
