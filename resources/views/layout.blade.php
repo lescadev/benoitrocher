@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Benoit Rocher - Photographe - Saint Léonard de Noblat - Mariage - Portrait</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href={{ asset('css/lightbox.css')}}>
   </head>
 
   <body>
@@ -59,6 +59,7 @@
 
       <script src="/js/jquery-3.3.1.min.js"></script>
       <script type="text/javascript" src="/js/sliderpoo.js"></script>
+      <script type="text/javascript" src={{ asset('js/vendor/lightbox.min.js')}}></script>
       <script type="text/javascript" src="/js/galerie.js" async></script>
 
   </body>

@@ -4,7 +4,7 @@
 
 @foreach ($prestationPhotos as $prestationPhoto)
         
-<img alt=" " loading="lazy" src="/storage/{{ $prestationPhoto['image'] }}"/>
+<a href="/storage/{{ $prestationPhoto['image'] }}" data-lightbox="prestation" data-title="{!! $prestationPhoto['description'] !!}"><img alt=" " loading="lazy" src="/storage/{{ $prestationPhoto['image'] }}"/></a>
 
 @endforeach
 
