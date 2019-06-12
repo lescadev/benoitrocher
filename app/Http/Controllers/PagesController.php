@@ -44,7 +44,7 @@ class PagesController extends Controller
     public function prestation($name)
     {
         $prestationPhotos = Photo::select('image', 'description')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug','=', $name)->get()->toArray();
-        $prestationInfos = Categories::find(2);
+        $prestationInfos = Categories::select()->where('categories.slug', '=', $name)->get()->toArray();
         
         return view ('prestation',[
             'prestationPhotos' => $prestationPhotos, 
