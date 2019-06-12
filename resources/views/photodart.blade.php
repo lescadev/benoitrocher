@@ -5,7 +5,7 @@
 
         @foreach ($arts as $art)
         
-        <img src="/storage/{{ $art['image'] }}"/>
+        <a href="/storage/{{ $art['image'] }}" data-lightbox="prestation" data-title="{!! $art['description'] !!}"><img src="/storage/{{ $art['image'] }}"/></a>
         
         @endforeach
     

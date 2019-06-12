@@ -59,7 +59,7 @@ class PagesController extends Controller
 
     public function photodart()
     {
-        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug', '=', 'photo-dart')->get()->toArray();
+        $arts = Photo::select('image', 'description')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug', '=', 'photo-dart')->get()->toArray();
         return view ('photodart',[
             'arts' => $arts
         ]);
