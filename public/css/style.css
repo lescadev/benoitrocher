@@ -255,7 +255,7 @@ p{
 .para1 {
     text-align: left;
 }
-/*Formulaire*/
+/*Formulaire contact*/
 .formulaire {
     height: 78vh;
     grid-column: 3 / 9;
@@ -279,7 +279,6 @@ p{
 textarea {
     width: 32vw;
     height: 40vh;
-    margin-top: 1vh;
 }
     
 .nom{
@@ -503,4 +502,203 @@ textarea {
     display: flex;
     align-content: left;
     margin-left: 3vw;
+}
+/*formulaire presta*/
+.formulaire {
+    height: 78vh;
+    grid-column: 3 / 9;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11vw;
+}
+
+.formulaire_presta {
+    height: 78vh;
+    grid-column: 4 / 11;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11vw;
+}
+
+.firstcolumnpresta{
+    grid-column: 6 / 11;
+    display: contents;
+}
+
+textarea {
+    width: 32vw;
+    height: 40vh;
+    margin-top: 1vh;
+}
+    
+.nompresta{
+    margin-top: 5vh;
+    display:inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.nompresta input{
+    padding: 0.5em;
+    width: 14.94vw;
+}
+    
+.prestaobjet{
+    display:inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.prestaobjet input{
+    padding: 0.5em;
+    width: 31.3vw;
+}
+
+.choixpresta{
+    display:inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.choixpresta label{
+    font-size: 0.65em;
+    text-align: left;
+    width: 15vw;
+    height: 3.5vh;
+    padding: 0.5em;
+    outline: solid 0.1em rgb(191, 191, 191);
+    background-color: white;
+    padding-top: 1.195vh;
+}
+
+.choixpresta input{
+    margin: auto;
+    height: 3.5vh;
+}
+.choixpresta label input#date{
+    width: 9.5vw;
+}
+.choixpresta input#tel{
+    width: 15vw; 
+    padding-left: 0.5vw;
+    margin-left: 0.5vw;
+}
+.choixpresta label input{
+    border: none;
+    font-size: 0.7rem;
+    width: 6vw;
+    padding: 0;
+}
+    
+.email{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.email input{
+    padding: 0.5em;
+}
+
+.messagepresta {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+    
+.boutonenvoyer {
+    grid-column: 4 / 6;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: black; /* button text color */
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px; 
+    text-transform: uppercase;
+    position: relative;
+	text-decoration: none;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.boutonenvoyer:before,
+.boutonenvoyer:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #3d3d3d; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+.boutonenvoyer:before{
+  background: #ebebeb; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.boutonenvoyer:hover{
+	color: white;
+}
+
+.boutonenvoyer:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+.slidebottomleft:after{
+    transform: translate3D(-100%,100%,0);
+}
+  
+.slidebottomleft:hover:after{
+      transform: translate3D(0,0,0);
+    transition: all .5s;
+}
+
+.contacttitre{
+    grid-column: 3 / 13;
+    height: 8vh;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.infoscontact{
+    grid-column: 9 /13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoscontact a{
+	padding: 0.3em;
+    color: black;
+    text-decoration: none;
+
+}
+
+.infoscontact a:hover{
+    color: red;
+    transition: color 0.5s ease;
 }
