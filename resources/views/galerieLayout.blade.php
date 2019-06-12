@@ -34,6 +34,7 @@
       <div class="prestaobjet">
           <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required><br>
       </div>
+      <input type="hidden" name="prestation" value="{{ $prestationInfos[0]['name'] }}">
       <br/>
       <br/>
       <div class="choixpresta">
