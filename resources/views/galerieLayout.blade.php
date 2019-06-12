@@ -12,7 +12,7 @@
 <!-- description presta -->
 
 <div class="infopresta">
-  @yield('descriptionpresta')
+  <p>@yield('descriptionpresta')</p>
 </div>
 
 <!-- titres de contact -->
