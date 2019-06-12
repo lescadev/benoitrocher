@@ -27,5 +27,8 @@ Route::post('contact', 'ContactFormController@store');
 
 Route::get('/prestation/{name}', 'PagesController@prestation')->name('prestation');
 
+Route::get('prestation', 'PrestaFormController@create');
+Route::post('prestation', 'PrestaFormController@store');
+
 Route::get('/photodart', 'PagesController@photodart')->name('photodart');
 
