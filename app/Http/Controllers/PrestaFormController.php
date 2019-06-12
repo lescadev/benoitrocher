@@ -20,13 +20,14 @@ class PrestaFormController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'objet' => 'required',
-            'tel' => 'required',
+            'telephone' => 'required',
             'date' => 'required',
             'message' => 'required',
+            'prestation_slug' => '',
         ]);
 
         Mail::to('je1taptamere@gmail.com')->send(new PrestaFormMail($data));
 
-        return redirect()->route('prestation');
+        return redirect()->route('prestation', ['name' => strtolower($data['prestation_slug'])]);
     }
 }

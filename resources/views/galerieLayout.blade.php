@@ -23,7 +23,7 @@
 
 <!-- Formulaire presta-->
 <div class="formulaire_presta">
-    <form action="/prestation" role="form" method="POST" id="reused_form">
+    <form action="/presta" role="form" method="POST" id="reused_form">
     <div class="firstcolumnpresta">
       <div class="nompresta">
         <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Nom" required> 
@@ -34,7 +34,8 @@
       <div class="prestaobjet">
           <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required><br>
       </div>
-      <input type="hidden" name="prestation" value="{{ $prestationInfos[0]['name'] }}">
+      <input type="hidden" name="prestation_nom" value="{{ $prestationInfos[0]['name'] }}">
+      <input type="hidden" name="prestation_slug" value="{{ $prestationInfos[0]['slug'] }}">
       <br/>
       <br/>
       <div class="choixpresta">
