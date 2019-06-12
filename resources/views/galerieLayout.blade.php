@@ -21,22 +21,22 @@
 </div>
 
 
-<!-- Formulaire -->
+<!-- Formulaire presta-->
 <div class="formulaire_presta">
     <form action="/prestation" role="form" method="POST" id="reused_form">
-    <div class="firstcolumn">
-      <div class="nom">
+    <div class="firstcolumnpresta">
+      <div class="nompresta">
         <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Nom" required> 
         <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="E-mail" required><br>
       </div>
       <br/>
       <br/>
-      <div class="objet">
+      <div class="prestaobjet">
           <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required><br>
       </div>
       <br/>
       <br/>
-      <div class="presta">
+      <div class="choixpresta">
         <label>Date souhaitée:
         	<input id="date" type="date" name="date" value="{{ old('date') }}" placeholder="Date" required>
     	</label>
@@ -46,7 +46,7 @@
       <br/>
       <br/>
     </div>
-    <div class="message">
+    <div class="messagepresta">
       <textarea id="message" type="text" name="message" value="{{ old('message') }}" maxlength="6000" placeholder="Message" required></textarea>
     </div>
 

@@ -255,7 +255,7 @@ p{
 .para1 {
     text-align: left;
 }
-/*Formulaire*/
+/*Formulaire contact*/
 .formulaire {
     height: 78vh;
     grid-column: 3 / 9;
@@ -279,7 +279,6 @@ p{
 textarea {
     width: 32vw;
     height: 40vh;
-    margin-top: 1vh;
 }
     
 .nom{
@@ -503,4 +502,92 @@ textarea {
     display: flex;
     align-content: left;
     margin-left: 3vw;
+}
+/*formulaire presta*/
+
+
+.formulaire_presta {
+    height: 78vh;
+    grid-column: 4 / 11;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11vw;
+}
+
+.firstcolumnpresta{
+    grid-column: 6 / 11;
+    display: contents;
+}
+   
+.nompresta{
+    margin-top: 5vh;
+    display:inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.nompresta input{
+    padding: 0.5em;
+    width: 14.94vw;
+}
+    
+.prestaobjet{
+    display:inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.prestaobjet input{
+    padding: 0.5em;
+    width: 31.3vw;
+}
+
+.choixpresta{
+    display:inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.choixpresta label{
+    font-size: 0.65em;
+    text-align: left;
+    width: 15vw;
+    height: 3.5vh;
+    padding: 0.5em;
+    outline: solid 0.1em rgb(191, 191, 191);
+    background-color: white;
+    padding-top: 1.195vh;
+}
+
+.choixpresta input{
+    margin: auto;
+    height: 3.5vh;
+}
+.choixpresta label input#date{
+    width: 9.5vw;
+    height: 3vh;
+}
+.choixpresta input#tel{
+    width: 15vw; 
+    padding-left: 0.5vw;
+    margin-left: 0.5vw;
+}
+.choixpresta label input{
+    border: none;
+    font-size: 0.7rem;
+    width: 6vw;
+    padding: 0;
+}
+    
+.messagepresta {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
