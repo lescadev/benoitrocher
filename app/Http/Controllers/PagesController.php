@@ -14,7 +14,7 @@ class PagesController extends Controller
 {
     public function __construct()
     {
-        $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
+        $infos = Infosgenerale::select()->get()->toArray();
         config(['infos' => $infos]);
         $categories = Categories::select('name', 'slug')->where('slug', '<>', 'photo-dart')->get()->toArray();
         config(['categories' => $categories]);
