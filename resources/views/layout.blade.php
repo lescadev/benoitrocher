@@ -16,7 +16,7 @@
       <div class="container">
         <!-- Header -->
         <div class="headerr">
-          <header>
+          <header  id="pose">
             <div class="logo">
               <a href="{{ route('accueil') }}">
                 <img src="/storage/{{ config('infos')[0]['image_logo'] }}" height="100%" width="100%"/>
