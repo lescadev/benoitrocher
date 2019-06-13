@@ -14,7 +14,7 @@ class PagesController extends Controller
 {
     public function __construct()
     {
-        $infos = Infosgenerale::select('image_logo','titre','slogan')->get()->toArray();
+        $infos = Infosgenerale::select()->get()->toArray();
         config(['infos' => $infos]);
         $categories = Categories::select('name', 'slug')->where('slug', '<>', 'photo-dart')->get()->toArray();
         config(['categories' => $categories]);
@@ -43,12 +43,14 @@ class PagesController extends Controller
 
     public function prestation($name)
     {
-        $prestationPhotos = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug','=', $name)->get()->toArray();
-        $prestationInfos = Categories::find(2);
+
+        $prestationPhotos = Photo::select('image', 'description')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug','=', $name)->get()->toArray();
+        $prestationInfos = Categories::select()->where('categories.slug', '=', $name)->get()->toArray();
+
         
         return view ('prestation',[
             'prestationPhotos' => $prestationPhotos, 
-            'prestationInfos' => $prestationInfos
+            'prestationInfos' => $prestationInfos,
             
         ]);
 
@@ -57,7 +59,7 @@ class PagesController extends Controller
 
     public function photodart()
     {
-        $arts = Photo::select('image')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug', '=', 'photo-dart')->get()->toArray();
+        $arts = Photo::select('image', 'description')->join('categories', 'categories.id', '=', 'photos.categories_id')->where('categories.slug', '=', 'photo-dart')->get()->toArray();
         return view ('photodart',[
             'arts' => $arts
         ]);

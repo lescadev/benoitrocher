@@ -18,6 +18,8 @@ class CreateInfosgeneralesTable extends Migration
             $table->string('image_logo');
             $table->string('titre');
             $table->string('slogan');
+            $table->string('titre_desc');
+            $table->longText('contenu_desc');
             $table->timestamps();
         });
     }

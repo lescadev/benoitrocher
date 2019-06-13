@@ -6,7 +6,7 @@
 <strong>Objet</strong> {{ $data['objet'] }} 
 
 <strong>Date</strong> {{ $data['date'] }}
-<strong>Telephone</strong> {{ $data['tel'] }}
+<strong>Telephone</strong> {{ $data['telephone'] }}
 
 <strong>Message</strong> 
 

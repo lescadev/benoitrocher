@@ -12,7 +12,7 @@
 <!-- description presta -->
 
 <div class="infopresta">
-  @yield('descriptionpresta')
+  <p>@yield('descriptionpresta')</p>
 </div>
 
 <!-- titres de contact -->
@@ -21,34 +21,19 @@
 </div>
 
 
-<!-- Formulaire -->
+<!-- Formulaire presta-->
 <div class="formulaire_presta">
-    <form action="/prestation" role="form" method="POST" id="reused_form">
-    <div class="firstcolumn">
-      <div class="nom">
+    <form action="/presta" role="form" method="POST" id="reused_form">
         <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Nom" required> 
-        <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="E-mail" required><br>
-      </div>
-      <br/>
-      <br/>
-      <div class="objet">
-          <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required><br>
-      </div>
-      <br/>
-      <br/>
-      <div class="presta">
-        <label>Date souhaitée:
-        	<input id="date" type="date" name="date" value="{{ old('date') }}" placeholder="Date" required>
+        <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="E-mail" required>
+        <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required>
+        <input type="hidden" name="prestation_nom" value="{{ $prestationInfos[0]['name'] }}">
+        <input type="hidden" name="prestation_slug" value="{{ $prestationInfos[0]['slug'] }}">
+        <input id="tel" type="tel" name="telephone" value="{{ old('tel') }}" placeholder="Téléphone">
+      <label>Date souhaitée:
+        <input id="date" type="date" name="date" value="{{ old('date') }}" placeholder="Date" required>
     	</label>
-    	<input id="tel" type="tel" name="telephone" value="{{ old('tel') }}" placeholder="Téléphone">
-        <br>
-      </div>
-      <br/>
-      <br/>
-    </div>
-    <div class="message">
       <textarea id="message" type="text" name="message" value="{{ old('message') }}" maxlength="6000" placeholder="Message" required></textarea>
-    </div>
 
     @csrf
 
