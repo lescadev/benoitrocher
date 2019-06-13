@@ -32,7 +32,13 @@
 <div class="para2"><p>
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab placeat vel eos odit! 
   Inventore perspiciatis aut quisquam deleniti fugit porro, quibusdam in et blanditiis 
-  est aspernatur asperiores doloribus tenetur accusamus? <br> <br> <br>
+  est aspernatur asperiores doloribus tenetur accusamus? 
+  Lorem ipsum dolor sit amet, consectetur adipisicing ytaque elit. Qui, placeat fuga? Quam fugiat incidunt possimus error neque! Unde molestiae id at libero ipsum voluptatibus eum, aliquam suscipit! Consequuntur, cupiditate at?
+
+
+
+
+<br> <br> <br>
 </p></div>
 </div>
 
