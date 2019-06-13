@@ -24,26 +24,16 @@
 <!-- Formulaire presta-->
 <div class="formulaire_presta">
     <form action="/presta" role="form" method="POST" id="reused_form">
-    <div class="firstcolumnpresta">
-      <div class="nompresta">
         <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Nom" required> 
-        <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="E-mail" required><br>
-      </div>
-      <div class="prestaobjet">
-          <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required><br>
-      </div>
-      <input type="hidden" name="prestation_nom" value="{{ $prestationInfos[0]['name'] }}">
-      <input type="hidden" name="prestation_slug" value="{{ $prestationInfos[0]['slug'] }}">
-      <div class="choixpresta">
-          <input id="tel" type="tel" name="telephone" value="{{ old('tel') }}" placeholder="Téléphone">
+        <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="E-mail" required>
+        <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required>
+        <input type="hidden" name="prestation_nom" value="{{ $prestationInfos[0]['name'] }}">
+        <input type="hidden" name="prestation_slug" value="{{ $prestationInfos[0]['slug'] }}">
+        <input id="tel" type="tel" name="telephone" value="{{ old('tel') }}" placeholder="Téléphone">
       <label>Date souhaitée:
-        	<input id="date" type="date" name="date" value="{{ old('date') }}" placeholder="Date" required>
+        <input id="date" type="date" name="date" value="{{ old('date') }}" placeholder="Date" required>
     	</label>
-      </div>
-    </div>
-    <div class="messagepresta">
       <textarea id="message" type="text" name="message" value="{{ old('message') }}" maxlength="6000" placeholder="Message" required></textarea>
-    </div>
 
     @csrf
 

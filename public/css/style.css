@@ -280,64 +280,28 @@ textarea {
     height: 40vh;
 }
     
-.nom{
-    margin-top: 10vh;
-    height:14vh;
-    width:40vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.nom #name{
+.formulaire #name{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     width: 39.6vw;
     margin-bottom:2vh;
 }
 
-.nom #email{
+.formulaire #email{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     width: 39.6vw;
+    margin-bottom:2vh;
 }
 
-.objet{
-    width:40vw;
-    height:8vh;
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
-}
-
-.objet input{
+.formulaire #objet{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     width:39.6vw;
-}
-    
-.email{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    margin-bottom:2vh;
 }
 
-.email input{
-    padding: 0.5em;
-}
-
-.message {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width:40vw;
-}
-
-.message textarea{
+.formulaire textarea{
     width:39.5vw;
 }
     
@@ -405,6 +369,7 @@ textarea {
     height: 8vh;
     text-align: center;
     margin-top: 2vh;
+    margin-bottom: 6vh;
 }
 
 .contacttitre h1{
@@ -504,96 +469,56 @@ textarea {
     margin-top:6vh;
 }
 
-.firstcolumnpresta{
-    grid-column: 6 / 11;
-    display: contents;
+form{
+    width:40vw;
 }
    
-.nompresta{
-    margin-top: 10vh;
-    height:14vh;
-    width:40vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+
+.formulaire_presta #name{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
-.nompresta #name{
+.formulaire_presta #email{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
+    margin-bottom:2vh;
+}
+    
+.formulaire_presta #objet{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     width: 39.6vw;
     margin-bottom:2vh;
 }
 
-.nompresta #email{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    width: 39.6vw;
-}
-    
-.prestaobjet{
-    height:8vh;
-    width:40vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.prestaobjet input{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    width: 39.6vw;
-}
-
-.choixpresta{
-    height:12vh;
-    width:40vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.choixpresta label{
+.formulaire_presta label{
     font-size: 0.65em;
     text-align: left;
-    width: 39vw;
-    height: 3.5vh;
-    padding: 0.5em;
-    outline: solid 0.1em rgb(191, 191, 191);
-    background-color: white;
-    padding-top: 1.195vh;
-}
-
-.choixpresta #date{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     width: 39.6vw;
-    margin-left:0.8vw;
+    height: 3.5vh;
+    padding-top: 1.195vh;
+    
 }
 
-.choixpresta #tel{
+.formulaire_presta label #date{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     width: 39.6vw;
     margin-bottom:2vh;
 }
 
-.choixpresta label #date{
-    border: none;
-    font-size: 1.2em;
-    width: 15vw;
+.formulaire_presta #tel{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
+    margin-bottom:2vh;
 }
     
-.messagepresta {
-    height:46vh;
-    width:40vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.messagepresta textarea{
+.formulaire_presta textarea{
     width:39.5vw;
 }
