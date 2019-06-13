@@ -1,11 +1,8 @@
-html {
-    scroll-behavior: smooth;
-}
 
 body{
     margin: 0;
 	background-color: rgb(244, 244, 244);
-  font-family: 'PT Sans', 'sans-serif';
+    font-family: 'PT Sans', 'sans-serif';
     background-image: url('');
 }
 .container{
@@ -27,6 +24,11 @@ header {
     grid-row: 1 / 100;
     background-color: rgb(199, 199, 199);
     border-right: 1px solid black;
+}
+
+.headerr #pose{
+    grid-column: 1/3;
+    left: 3vw;
 }
 
 .titre p {
@@ -57,11 +59,11 @@ header {
 }
 
 nav {
-    margin-top: 80px;
+    margin-top: 11vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 350px;
+    height: 55vh;
 }
 
 .button {
@@ -106,8 +108,10 @@ nav #prestations .prestation div{
 
 footer{
 	display: flex;
-	justify-content: center;
-	grid-column: 3 / 13;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 3 / 13;
+    height:20vh;
 }
 
 p{
@@ -258,6 +262,7 @@ p{
 /*Formulaire contact*/
 .formulaire {
     height: 78vh;
+    width:35vw;
     grid-column: 3 / 9;
     display:flex;
     flex-direction: column;
@@ -266,36 +271,41 @@ p{
     margin-left: 11vw;
 }
 
-.formulaire_presta {
-    height: 78vh;
-    grid-column: 4 / 11;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 11vw;
+form{
+    width:35vw;
 }
 
 textarea {
-    width: 32vw;
+    width: 40vw;
     height: 40vh;
 }
     
 .nom{
-    margin-top: 5vh;
-    display:inline-block;
+    margin-top: 10vh;
+    height:14vh;
+    width:40vw;
+    display:flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
 }
 
-.nom input{
-    padding: 0.5em;
-    width: 15vw;
+.nom #name{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
+    margin-bottom:2vh;
 }
-    
+
+.nom #email{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
+}
+
 .objet{
-    display:inline-block;
+    width:40vw;
+    height:8vh;
+    display:flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -303,40 +313,9 @@ textarea {
 }
 
 .objet input{
-    padding: 0.5em;
-    width: 31.3vw;
-}
-
-.presta{
-    display: flex;
-    height: 1vh;
-    align-items: flex-start;
-    justify-content: space-between;
-    background-color: rgb(244, 244, 244);
-}
-
-.presta label{
-    display: inline-block;
-    font-size: 0.65em;
-    text-align: left;
-    width: 15vw;
-    height: 3.1vh;
-    padding: 0.5em;
-    outline: solid 0.1em rgb(191, 191, 191);
-    background-color: white;
-}
-
-.presta input{
-    display: inline-block;
-    width: 15vw;
-    padding: 0.5em;
-}
-
-.presta label input{
-    border: none;
-    font-size: 0.7rem;
-    width: 6vw;
-    padding: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width:39.6vw;
 }
     
 .email{
@@ -355,6 +334,11 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width:40vw;
+}
+
+.message textarea{
+    width:39.5vw;
 }
     
 .boutonenvoyer {
@@ -362,7 +346,6 @@ textarea {
     height: 8vh;
     display: flex;
     justify-content: center;
-    margin-top: 2vh;
     font-size: 1.3em;
     cursor: pointer;
     color: black; /* button text color */
@@ -422,6 +405,11 @@ textarea {
     height: 8vh;
     text-align: center;
     margin-top: 2vh;
+}
+
+.contacttitre h1{
+
+    margin-top:1vh;
 }
 
 .infoscontact{
@@ -508,12 +496,12 @@ textarea {
 
 .formulaire_presta {
     height: 78vh;
-    grid-column: 4 / 11;
+    grid-column: 3 / 13;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 11vw;
+    margin-top:6vh;
 }
 
 .firstcolumnpresta{
@@ -522,42 +510,55 @@ textarea {
 }
    
 .nompresta{
-    margin-top: 5vh;
-    display:inline-block;
+    margin-top: 10vh;
+    height:14vh;
+    width:40vw;
+    display:flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
 }
 
-.nompresta input{
-    padding: 0.5em;
-    width: 14.94vw;
+.nompresta #name{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
+    margin-bottom:2vh;
+}
+
+.nompresta #email{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
 }
     
 .prestaobjet{
-    display:inline-block;
+    height:8vh;
+    width:40vw;
+    display:flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     
 }
 
 .prestaobjet input{
-    padding: 0.5em;
-    width: 31.3vw;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
 }
 
 .choixpresta{
-    display:inline-block;
+    height:12vh;
+    width:40vw;
+    display:flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
 }
 
 .choixpresta label{
     font-size: 0.65em;
     text-align: left;
-    width: 15vw;
+    width: 39vw;
     height: 3.5vh;
     padding: 0.5em;
     outline: solid 0.1em rgb(191, 191, 191);
@@ -565,29 +566,34 @@ textarea {
     padding-top: 1.195vh;
 }
 
-.choixpresta input{
-    margin: auto;
-    height: 3.5vh;
+.choixpresta #date{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
+    margin-left:0.8vw;
 }
-.choixpresta label input#date{
-    width: 9.5vw;
-    height: 3vh;
+
+.choixpresta #tel{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 39.6vw;
+    margin-bottom:2vh;
 }
-.choixpresta input#tel{
-    width: 15vw; 
-    padding-left: 0.5vw;
-    margin-left: 0.5vw;
-}
-.choixpresta label input{
+
+.choixpresta label #date{
     border: none;
-    font-size: 0.7rem;
-    width: 6vw;
-    padding: 0;
+    font-size: 1.2em;
+    width: 15vw;
 }
     
 .messagepresta {
+    height:46vh;
+    width:40vw;
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+}
+
+.messagepresta textarea{
+    width:39.5vw;
 }

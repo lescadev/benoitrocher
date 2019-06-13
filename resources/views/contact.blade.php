@@ -10,19 +10,13 @@
 <!-- Formulaire -->
 <div class="formulaire">
     <form action="/contact" role="form" method="POST" id="reused_form">
-    <div class="firstcolumn">
       <div class="nom">
         <input id="name" type="text" name="name" value="{{ old('name') }}" placeholder="Nom" required> 
         <input id="email" type="email" name="email" value="{{ old('email') }}" placeholder="E-mail" required><br>
       </div>
-      <br/>
-      <br/>
       <div class="objet">
           <input id="objet" type="text" name="objet" value="{{ old('objet') }}" placeholder="Objet" required><br>
       </div>
-      <br/>
-      <br/>
-    </div>
     <div class="message">
       <textarea id="message" type="text" name="message" value="{{ old('message') }}" maxlength="6000" placeholder="Message" required></textarea>
     </div>
