@@ -4,6 +4,7 @@ body{
 	background-color: rgb(244, 244, 244);
     font-family: 'PT Sans', 'sans-serif';
     background-image: url('');
+    font-size: 20px;
 }
 .container{
     display: grid;
