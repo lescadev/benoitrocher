@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+<title>Benoit Rocher - Photographe - Limoges - Mentions Légales</title>
+@endsection
+
 @section('content')
 
 <!-- Texte des mentions légales -->

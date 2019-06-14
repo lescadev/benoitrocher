@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+<title>Benoit Rocher - Photographe - Limoges - Contactez-moi</title>
+@endsection
+
 @section('content')
 
 <!-- titres de contact -->

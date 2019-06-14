@@ -112,7 +112,6 @@ footer{
     justify-content: center;
     align-items: flex-end;
     grid-column: 3 / 13;
-    height:20vh;
 }
 
 p{
@@ -368,7 +367,7 @@ textarea {
     grid-column: 3 / 13;
     height: 8vh;
     text-align: center;
-    margin-top: 2vh;
+    margin-bottom: 0.8em;
 }
 
 .contacttitre h1{

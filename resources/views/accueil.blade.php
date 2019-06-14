@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+<title>Benoit Rocher - Photographe - Limoges - Mariage - Portrait - Reportages</title>
+@endsection
+
 @section('content')
 
 <!-- Slider -->

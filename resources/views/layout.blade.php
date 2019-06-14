@@ -5,10 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Benoit Rocher - Photographe - Saint Léonard de Noblat - Mariage - Portrait</title>
+    <meta name="description" content="Benoit Rocher, Photographe indépendant sur Limoges et Saint Léonard-de-Noblat en Nouvelle-Aquitaine, réalise des prestations: Mariage, Reportages, Portraits, Reportages Entreprises,..." />
+    @yield('title')
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href={{ asset('css/lightbox.css')}}>
+    <link rel="icon" href="/storage/{{ config('infos')[0]['image_logo'] }}"/>
   </head>
 
   <body>

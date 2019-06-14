@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+<title>Benoit Rocher - Photographe - Limoges - Prestations</title>
+@endsection
+
 @section('content')
 
 <div id="galeriecontent">
